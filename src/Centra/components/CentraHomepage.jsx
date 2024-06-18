@@ -38,7 +38,7 @@ const CentraHomepage = () => {
     const fetchUserData = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch('https://moringo-jktva4fjr-brandon-salims-projects.vercel.app/current_user', {
+        const response = await fetch('https://moringo-be.vercel.app/current_user', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ const CentraHomepage = () => {
       try {
         const token = localStorage.getItem('token');
         const response = await fetch(
-          `https://moringo-jktva4fjr-brandon-salims-projects.vercel.app/centra/drying_machine_remaining_time/${branch}`,
+          `https://moringo-be.vercel.app/centra/drying_machine_remaining_time/${branch}`,
           {
             method: 'GET',
             headers: {
@@ -93,7 +93,7 @@ const CentraHomepage = () => {
           try {
             const token = localStorage.getItem('token');
             const response = await fetch(
-              `https://moringo-jktva4fjr-brandon-salims-projects.vercel.app/centra/powder_machine_remaining_time/${branch}`,
+              `https://moringo-be.vercel.app/centra/powder_machine_remaining_time/${branch}`,
               {
                 method: 'GET',
                 headers: {
