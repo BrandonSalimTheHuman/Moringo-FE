@@ -45,9 +45,9 @@ const CentraDeliveries = () => {
       shipmentId: 'SH002',
       weight: 5.5,
       sender:
-        "I can't take it anymore. I'm sick of Acheron. I try to play Seele, my Acheron deals more damage. I try to play Jingliu, my Acheron deals more damage. I try to play DHIL, my Acheron does more damage. I want to play Silver Wolf, her best team has Acheron. I want to play Sparkle, but she wants Acheron. She grabs me by the throat, I grind for her, I do SU for her. I bought the 5* SU Nihility Lightcone for her, even superimpose it for her. She isn't satisfied. I pull for her signature lightcone, she scoffs it off. 'I need this to be superimposed.' She tells me.She doesn't need a team and she throws herself onto her enemies. 'You just need to support me, I can do everything by myself.' I can't pull for more support characters, I dont have enough oneiric shards and they aren't available yet. She grabs my credit card, it declines. 'Guess this is the end.' She uses her ult. She says her ult line. At this point, I've already been broken. She doesn't even need energy. What a cruel world.",
+        "I can't take it anymore",
       receiver:
-        "Who's joe? a distant voice asks. Instantly everyone nearby hears the sound of 1,000s of bricks rapidly shuffling towards his location. The earth itself seemed to cry out in agony, until finally the ground itself split open and a horrific creature crawled from the ground, covered in mucus and tar. Joe Momma…the creature whispered. The man cried out in pain as he disintegrated into dust, and the whole world fell silent in fear.",
+        "Who's joe?",
       packageCount: 5,
       expeditionTeam: 'Team qwerty uiop adsfjkl;',
       productionDate: '02/12/23',
@@ -186,7 +186,7 @@ const CentraDeliveries = () => {
     const fetchUserData = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch('https://moringo-jktva4fjr-brandon-salims-projects.vercel.app/current_user', {
+        const response = await fetch('https://moringo-be.vercel.app/current_user', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -214,7 +214,7 @@ const CentraDeliveries = () => {
       try {
         const token = localStorage.getItem('token');
         const response = await fetch(
-          `https://moringo-jktva4fjr-brandon-salims-projects.vercel.app/all_powder_batches?centra_name=${branch}`,
+          `https://moringo-be.vercel.app/all_powder_batches?centra_name=${branch}`,
           {
             method: 'GET',
             headers: {
@@ -329,7 +329,7 @@ const CentraDeliveries = () => {
     try {
       const token = localStorage.getItem('token');
       const response = await fetch(
-        `https://moringo-jktva4fjr-brandon-salims-projects.vercel.app/centra/shipments?token=${token}`,
+        `https://moringo-be.vercel.app/centra/shipments?token=${token}`,
         {
           method: 'POST',
           headers: {
