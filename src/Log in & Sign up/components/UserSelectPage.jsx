@@ -64,7 +64,7 @@ const UserSelectPage = () => {
       };
 
       try {
-        const response = await fetch('https://moringo-jktva4fjr-brandon-salims-projects.vercel.app/signup', {
+        const response = await fetch('https://moringo-be.vercel.app/signup', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -124,7 +124,7 @@ const UserSelectPage = () => {
     };
 
     try {
-      const response = await fetch('https://moringo-jktva4fjr-brandon-salims-projects.vercel.app/signup', {
+      const response = await fetch('https://moringo-be.vercel.app/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
