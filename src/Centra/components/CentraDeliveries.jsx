@@ -186,7 +186,7 @@ const CentraDeliveries = () => {
     const fetchUserData = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch('http://127.0.0.1:8000/current_user', {
+        const response = await fetch('https://moringo-jktva4fjr-brandon-salims-projects.vercel.app/current_user', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -214,7 +214,7 @@ const CentraDeliveries = () => {
       try {
         const token = localStorage.getItem('token');
         const response = await fetch(
-          `http://127.0.0.1:8000/all_powder_batches?centra_name=${branch}`,
+          `https://moringo-jktva4fjr-brandon-salims-projects.vercel.app/all_powder_batches?centra_name=${branch}`,
           {
             method: 'GET',
             headers: {
@@ -329,7 +329,7 @@ const CentraDeliveries = () => {
     try {
       const token = localStorage.getItem('token');
       const response = await fetch(
-        `http://127.0.0.1:8000/centra/shipments?token=${token}`,
+        `https://moringo-jktva4fjr-brandon-salims-projects.vercel.app/centra/shipments?token=${token}`,
         {
           method: 'POST',
           headers: {
